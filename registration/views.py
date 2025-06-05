@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .mongo import get_mongo_client  # make sure to place the MongoDB code in mongodb.py
+from .mongo import get_mongo_client
 
 class RegisterView(APIView):
     def post(self, request):
